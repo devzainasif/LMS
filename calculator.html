@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Percentage Calculator</title>
+</head>
+<body>
+    <h1 class="center"><span id="percentage">PERCENTAGE</span> <span id="calculator">CALCULATOR</span></h1>
+
+    <div id="main">
+        <table id="content">
+            <tbody>
+                <tr>
+                    <td>
+                        <label for="billAmount">Bill Amount</label>
+                    </td>
+                    <td>
+                        <input type="number" id="billAmount" name="billAmount">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="percentageTip">Percentage Tip</label>
+                    </td>
+                    <td>
+                        <input type="number" id="percentageTip" name="percentageTip">
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="tipAmonut">Tip Amonut</label>
+                    </td>
+                    <td>
+                        <input type="number" id="tipAmonut" name="tipAmonut" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <label for="total">Total</label>
+                    </td>
+                    <td>
+                        <input type="number" id="total" name="total" disabled>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2"> 
+                        <button type="submit" id="submitBtn" onclick="calculate()">Calculate</button>
+                    </td>
+                </tr>
+
+
+            </tbody>
+        </table>
+    </div>
+</body>
+<script src="calculation.js"></script>
+</html>
